@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TechStock_API.props" />
+</Project>
