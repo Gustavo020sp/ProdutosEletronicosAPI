@@ -1,8 +1,8 @@
-#API de Produtos Eletrônicos
+# API de Produtos Eletrônicos
 
   
 
-##*Descrição*
+## *Descrição*
 
 Esta é uma API desenvolvida em .NET 8 para gerenciar produtos eletrônicos. A API oferece um CRUD completo (Create, Read, Update e Delete) e outras funcionalidades adicionais, como a alteração da quantidade de itens em estoque utilizando o método HttpPatch.
 O projeto segue os princípios da Clean Architecture, com as pastas organizadas e nomeadas de acordo com suas responsabilidades.
