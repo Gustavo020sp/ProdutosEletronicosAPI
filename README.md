@@ -14,10 +14,10 @@ Consulta de produtos.
 Atualização completa de produtos.
 Exclusão de produtos.
 
-*Gestão de Estoque:*
+* Gestão de Estoque: *
 Atualização da quantidade de itens no estoque usando o método HttpPatch.
 
-*Organização com DTOs:*
+* Organização com DTOs: *
 Utiliza objetos de transferência de dados (DTOs) para gerenciar a quantidade de estoque separadamente da entidade principal.
 Estrutura do Projeto
 
