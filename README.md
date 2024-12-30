@@ -14,64 +14,65 @@ Consulta de produtos.
 Atualização completa de produtos.  
 Exclusão de produtos.  
 
-**Gestão de Estoque:**
+**Gestão de Estoque:**  
 Atualização da quantidade de itens no estoque usando o método HttpPatch.
 
-**Organização com DTOs:**
-Utiliza objetos de transferência de dados (DTOs) para gerenciar a quantidade de estoque separadamente da entidade principal.
-Estrutura do Projeto
+**Organização com DTOs:**  
+Utiliza objetos de transferência de dados (DTOs) para gerenciar a quantidade de estoque separadamente da entidade principal.    
+  
+## Estrutura do Projeto
 
-A organização segue o padrão da Clean Architecture, com separação clara de responsabilidades:
-*Entidades:* Contém as definições principais dos objetos do domínio, como Produto.
-*DTOs:* Gerencia dados específicos para atualização parcial, como o estoque de produtos.
-*Serviços:* Contém a lógica de negócio para manipulação dos produtos.
-*Controllers:* Implementação dos endpoints da API.
+A organização segue o padrão da Clean Architecture, com separação clara de responsabilidades:  
+*Entidades:* Contém as definições principais dos objetos do domínio, como Produto.  
+*DTOs:* Gerencia dados específicos para atualização parcial, como o estoque de produtos.  
+*Serviços:* Contém a lógica de negócio para manipulação dos produtos.  
+*Controllers:* Implementação dos endpoints da API.  
 
-## **Tecnologias Utilizadas**
-Linguagem: C#
-Framework: .NET 8
-Arquitetura: Clean Architecture
-Banco de Dados: SQL Server (Entity Framework Core)
+## **Tecnologias Utilizadas**  
+Linguagem: C#  
+Framework: .NET 8  
+Arquitetura: Clean Architecture  
+Banco de Dados: SQL Server (Entity Framework Core)  
 
-**Documentação: Swagger**
+**Documentação: Swagger**  
 
-## **Como Executar o Projeto**
-Clone o repositório:
-git clone https://github.com/Gustavo020sp/api-produtos-eletronicos.git
+## **Como Executar o Projeto**  
+Clone o repositório:  
+git clone https://github.com/Gustavo020sp/api-produtos-eletronicos.git  
 
-Navegue até a pasta do projeto:
-Ex: cd api-produtos-eletronicos
+Navegue até a pasta do projeto:  
+Ex: cd api-produtos-eletronicos  
+ 
+Restaure as dependências:  
+dotnet restore  
 
-Restaure as dependências:
-dotnet restore
+Atualize o banco de dados:  
+Certifique-se de que a string de conexão está correta no arquivo appsettings.json e execute os comandos:  
+dotnet ef database update  
 
-Atualize o banco de dados:
-Certifique-se de que a string de conexão está correta no arquivo appsettings.json e execute os comandos:
-dotnet ef database update
+Execute a aplicação:  
+dotnet run  
 
-Execute a aplicação:
-dotnet run
+Acesse a documentação:  
+Abra seu navegador e acesse: http://localhost:5000/swagger  
 
-Acesse a documentação:
-Abra seu navegador e acesse: http://localhost:5000/swagger
+**Exemplos de Uso**  
+Atualizar Estoque de um Produto  
+Endpoint: PATCH /api/produtos/{id}  
 
-**Exemplos de Uso**
-Atualizar Estoque de um Produto
-Endpoint: PATCH /api/produtos/{id}
+Exemplo de corpo da requisição:  
 
-Exemplo de corpo da requisição:
+{  
+  "quantidade": 50  
+}  
 
-{
-  "quantidade": 50
-}
+**Cadastrar um Novo Produto**  
+Endpoint: POST /api/produtos  
 
-**Cadastrar um Novo Produto**
-Endpoint: POST /api/produtos
+Exemplo de corpo da requisição:  
 
-Exemplo de corpo da requisição:
-
-{
-  "nome": "Mouse Gamer",
-  "quantidade": 100,
-  "valorUnitario": 99.99
-}
+{  
+  "nome": "Mouse Gamer",  
+  "quantidade": 100,  
+  "valorUnitario": 99.99  
+}  
