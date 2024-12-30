@@ -8,11 +8,11 @@ Esta é uma API desenvolvida em .NET 8 para gerenciar produtos eletrônicos. A A
 O projeto segue os princípios da Clean Architecture, com as pastas organizadas e nomeadas de acordo com suas responsabilidades.
 ### **Funcionalidades**
 
-**CRUD de Produtos:**
-Cadastro de novos produtos.
-Consulta de produtos.
-Atualização completa de produtos.
-Exclusão de produtos.
+**CRUD de Produtos:**  
+Cadastro de novos produtos.  
+Consulta de produtos.  
+Atualização completa de produtos.  
+Exclusão de produtos.  
 
 **Gestão de Estoque:**
 Atualização da quantidade de itens no estoque usando o método HttpPatch.
